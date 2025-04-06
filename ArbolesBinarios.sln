@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbolesBinarios", "ArbolesBinarios\ArbolesBinarios.csproj", "{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArbolesBinarios1", "TestArbolesBinarios1\TestArbolesBinarios1.csproj", "{92BD403E-DAFE-452F-BA8F-6478F54FB0E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BD403E-DAFE-452F-BA8F-6478F54FB0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BD403E-DAFE-452F-BA8F-6478F54FB0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BD403E-DAFE-452F-BA8F-6478F54FB0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BD403E-DAFE-452F-BA8F-6478F54FB0E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
