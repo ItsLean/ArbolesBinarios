@@ -1,4 +1,10 @@
-﻿class Program
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ArbolesBinarios;
+class Program
 {
     static void Main(string[] args)
     {
@@ -36,5 +42,4 @@
         Console.WriteLine("\nInorden después de eliminar 50:");
         arbol.Inorden(); // 30 40 60 70 80
     }
-}
 }
