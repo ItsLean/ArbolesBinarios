@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbolesBinarios", "ArbolesBinarios\ArbolesBinarios.csproj", "{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6E5224F-1F4E-4DE2-AB4E-B348C5E1A66B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F7EB720-FC83-4679-B85D-FB4F6AA504A9}
+	EndGlobalSection
+EndGlobal
