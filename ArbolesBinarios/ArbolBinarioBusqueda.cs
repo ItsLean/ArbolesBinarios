@@ -126,52 +126,63 @@ namespace ArbolesBinarios
         }
 
         // Recorridos del árbol
-        public void Inorden()
+        public string Inorden()
         {
-            InordenRecursivo(Raiz);
-            Console.WriteLine();
-        }
-
-        private void InordenRecursivo(Nodo nodo)
-        {
-            if (nodo != null)
+            using (var writer = new StringWriter())
             {
-                InordenRecursivo(nodo.Izquierdo);
-                Console.Write(nodo.Valor + " ");
-                InordenRecursivo(nodo.Derecho);
+                InordenRecursivo(Raiz, writer);
+                return writer.ToString().Trim();
             }
         }
 
-        public void Preorden()
-        {
-            PreordenRecursivo(Raiz);
-            Console.WriteLine();
-        }
-
-        private void PreordenRecursivo(Nodo nodo)
+        private void InordenRecursivo(Nodo nodo, TextWriter writer)
         {
             if (nodo != null)
             {
-                Console.Write(nodo.Valor + " ");
-                PreordenRecursivo(nodo.Izquierdo);
-                PreordenRecursivo(nodo.Derecho);
+                InordenRecursivo(nodo.Izquierdo, writer);
+                writer.Write(nodo.Valor + " ");
+                InordenRecursivo(nodo.Derecho, writer);
             }
         }
 
-        public void Postorden()
+        // Similar para Preorden y Postorden
+        public string Preorden()
         {
-            PostordenRecursivo(Raiz);
-            Console.WriteLine();
+            using (var writer = new StringWriter())
+            {
+                PreordenRecursivo(Raiz, writer);
+                return writer.ToString().Trim();
+            }
         }
 
-        private void PostordenRecursivo(Nodo nodo)
+        private void PreordenRecursivo(Nodo nodo, TextWriter writer)
         {
             if (nodo != null)
             {
-                PostordenRecursivo(nodo.Izquierdo);
-                PostordenRecursivo(nodo.Derecho);
-                Console.Write(nodo.Valor + " ");
+                writer.Write(nodo.Valor + " ");
+                PreordenRecursivo(nodo.Izquierdo, writer);
+                PreordenRecursivo(nodo.Derecho, writer);
+            }
+        }
+
+        public string Postorden()
+        {
+            using (var writer = new StringWriter())
+            {
+                PostordenRecursivo(Raiz, writer);
+                return writer.ToString().Trim();
+            }
+        }
+
+        private void PostordenRecursivo(Nodo nodo, TextWriter writer)
+        {
+            if (nodo != null)
+            {
+                PostordenRecursivo(nodo.Izquierdo, writer);
+                PostordenRecursivo(nodo.Derecho, writer);
+                writer.Write(nodo.Valor + " ");
             }
         }
     }
+    
 }
